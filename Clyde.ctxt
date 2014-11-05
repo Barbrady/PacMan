@@ -6,4 +6,6 @@ comment1.params=
 comment1.target=void\ finPanico()
 comment2.params=
 comment2.target=void\ muerte()
-numComments=3
+comment3.params=comecocosX\ comecocosY
+comment3.target=void\ inteligenciaArtificial(int,\ int)
+numComments=4

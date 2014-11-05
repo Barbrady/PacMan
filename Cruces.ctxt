@@ -1,0 +1,9 @@
+#BlueJ class context
+comment0.params=
+comment0.target=Cruces()
+comment0.text=\n\ Constructor\ for\ objects\ of\ class\ Cruces\n
+comment1.params=x\ y
+comment1.target=Cruces(int,\ int)
+comment2.params=
+comment2.target=java.awt.Rectangle\ crearRectangulo()
+numComments=3

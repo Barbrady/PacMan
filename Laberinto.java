@@ -26,6 +26,7 @@ class Laberinto
     private Image imagen;       //La variable imagen donde irá la imagen de la figura, ya sea muro, punto pequeño, punto grando o punto vacío.
     private ImageIcon imageIcon;
     private int bolas;
+    //private boolean arriba, abajo, izquierda, derecha;
     
     Laberinto() 
        {      
@@ -100,6 +101,38 @@ class Laberinto
           }
         }
         return bolas;
+    }
+    
+    public boolean arriba(int x, int y){
+        if(matriz[x][y-1] == 0){
+            return false;
+        }
+        else{
+            return true;}
+    }
+    
+    public boolean abajo(int x, int y){
+        if(matriz[x][y+1] == 0){
+            return false;
+        }
+        else{
+            return true;}
+    }
+    
+    public boolean derecha(int x, int y){
+        if(matriz[x+1][y] == 0){
+            return false;
+        }
+        else{
+            return true;}
+    }
+    
+    public boolean izquierda(int x, int y){
+        if(matriz[x-1][y] == 0){
+            return false;
+        }
+        else{
+            return true;}
     }
 }
     
