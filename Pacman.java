@@ -8,6 +8,7 @@ import javax.swing.JFrame;
 public class Pacman extends JFrame
 {
    private int alto, ancho; //Variables para las dimensiones del JFrame
+   private VistaControlador juego;
    public Pacman()
     {
        alto = 1200;
@@ -15,13 +16,15 @@ public class Pacman extends JFrame
        setSize(ancho, alto);
        setResizable(true);
        setFocusable(false);
-       add(new VistaControlador());//Añadimos la clase VistaControlador, que extiende JPanel, al JFrame.
+       juego = new VistaControlador();
+	   add(juego);
+	   //add(new VistaControlador());//Añadimos la clase VistaControlador, que extiende JPanel, al JFrame.
        setVisible(true);//Hacemos visible el JFrame. 
     }
     
    public static void main (String[]args)
    {
-       new Pacman();
+       Pacman();
    }
 }
         
